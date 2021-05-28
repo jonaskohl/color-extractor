@@ -1,6 +1,6 @@
 <?php
 
-namespace League\ColorExtractor;
+namespace JonasKohl\ColorExtractor;
 
 class Palette implements \Countable, \IteratorAggregate
 {

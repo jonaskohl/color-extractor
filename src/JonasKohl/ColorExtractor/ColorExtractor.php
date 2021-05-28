@@ -1,17 +1,17 @@
 <?php
 
-namespace League\ColorExtractor;
+namespace JonasKohl\ColorExtractor;
 
 class ColorExtractor
 {
-    /** @var \League\ColorExtractor\Palette */
+    /** @var \JonasKohl\ColorExtractor\Palette */
     protected $palette;
 
     /** @var \SplFixedArray */
     protected $sortedColors;
 
     /**
-     * @param \League\ColorExtractor\Palette $palette
+     * @param \JonasKohl\ColorExtractor\Palette $palette
      */
     public function __construct(Palette $palette)
     {

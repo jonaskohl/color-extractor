@@ -1,14 +1,21 @@
 {
-    "name": "league/color-extractor",
+    "name": "jonaskohl/color-extractor",
     "type": "library",
     "description": "Extract colors from an image as a human would do.",
     "keywords": ["image", "color", "extract", "palette", "human"],
-    "homepage": "https://github.com/thephpleague/color-extractor",
+    "homepage": "https://github.com/jonaskohl/color-extractor",
     "license": "MIT",
     "replace": {
+        "league/color-extractor" : "*",
         "matthecat/colorextractor": "*"
     },
     "authors": [
+        {
+            "name": "Jonas Kohl",
+            "email": "contact@jonaskohl.de",
+            "homepage": "https://jonaskohl.de/",
+            "role": "Developer"
+        },
         {
             "name": "Mathieu Lechat",
             "email": "math.lechat@gmail.com",

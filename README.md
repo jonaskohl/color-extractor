@@ -1,9 +1,9 @@
 ColorExtractor
 ==============
 
-[![Build Status](https://travis-ci.org/thephpleague/color-extractor.png?branch=master)](https://travis-ci.org/thephpleague/color-extractor)
-[![Total Downloads](https://poser.pugx.org/league/color-extractor/downloads.png)](https://packagist.org/packages/league/color-extractor)
-[![Latest Stable Version](https://poser.pugx.org/league/color-extractor/v/stable.png)](https://packagist.org/packages/league/color-extractor)
+[![Build Status](https://travis-ci.org/jonaskohl/color-extractor.png?branch=master)](https://travis-ci.org/jonaskohl/color-extractor)
+[![Total Downloads](https://poser.pugx.org/jonaskohl/color-extractor/downloads.png)](https://packagist.org/packages/jonaskohl/color-extractor)
+[![Latest Stable Version](https://poser.pugx.org/jonaskohl/color-extractor/v/stable.png)](https://packagist.org/packages/jonaskohl/color-extractor)
 
 Extract colors from an image like a human would do.
 
@@ -12,7 +12,7 @@ Extract colors from an image like a human would do.
 Via Composer
 
 ``` bash
-$ composer require league/color-extractor:0.3.*
+$ composer require jonaskohl/color-extractor:0.3.*
 ```
 
 ## Usage
@@ -20,9 +20,9 @@ $ composer require league/color-extractor:0.3.*
 ```php
 require 'vendor/autoload.php';
 
-use League\ColorExtractor\Color;
-use League\ColorExtractor\ColorExtractor;
-use League\ColorExtractor\Palette;
+use JonasKohl\ColorExtractor\Color;
+use JonasKohl\ColorExtractor\ColorExtractor;
+use JonasKohl\ColorExtractor\Palette;
 
 $palette = Palette::fromFilename('./some/image.png');
 
@@ -65,15 +65,16 @@ $palette = Palette::fromFilename('./some/image.png', Color::fromHexToInt('#FFFFF
 
 ## Contributing
 
-Please see [CONTRIBUTING](https://github.com/thephpleague/color-extractor/blob/master/CONTRIBUTING.md) for details.
+Please see [CONTRIBUTING](https://github.com/jonaskohl/color-extractor/blob/master/CONTRIBUTING.md) for details.
 
 
 ## Credits
 
+- [The League of Extraordinary Packages](https://github.com/thephpleague)
 - [Mathieu Lechat](https://github.com/MatTheCat)
-- [All Contributors](https://github.com/thephpleague/color-extractor/contributors)
+- [All Contributors](https://github.com/jonaskohl/color-extractor/contributors)
 
 
 ## License
 
-The MIT License (MIT). Please see [License File](https://github.com/thephpleague/color-extractor/blob/master/LICENSE) for more information.
+The MIT License (MIT). Please see [License File](https://github.com/jonaskohl/color-extractor/blob/master/LICENSE) for more information.

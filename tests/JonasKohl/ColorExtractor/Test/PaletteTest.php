@@ -1,10 +1,10 @@
 <?php
 
-namespace League\ColorExtractor\Test;
+namespace JonasKohl\ColorExtractor\Test;
 
-use League\ColorExtractor\Color;
-use League\ColorExtractor\ColorExtractor;
-use League\ColorExtractor\Palette;
+use JonasKohl\ColorExtractor\Color;
+use JonasKohl\ColorExtractor\ColorExtractor;
+use JonasKohl\ColorExtractor\Palette;
 
 class PaletteTest extends \PHPUnit_Framework_TestCase
 {
