@@ -48,10 +48,27 @@ class Palette implements \Countable, \IteratorAggregate
      * @param int|null $backgroundColor
      *
      * @return Palette
+     * 
+     * @throws \InvalidArgumentException
      */
     public static function fromFilename($filename, $backgroundColor = null)
     {
-        $image = imagecreatefromstring(file_get_contents($filename));
+        if (!is_readable($filename)) {
+            throw new \InvalidArgumentException("Filename must be a valid path and should be readable");
+        }
+        return self::fromContents(file_get_contents($filename), $backgroundColor);
+    }
+
+    /**
+     * Create instance with file contents
+     *
+     * @param $contents
+     * @param  null  $backgroundColor
+     *
+     * @return Palette
+     */
+    public static function fromContents($contents, $backgroundColor = null) {
+        $image = imagecreatefromstring($contents);
         $palette = self::fromGD($image, $backgroundColor);
         imagedestroy($image);
 
@@ -68,7 +85,9 @@ class Palette implements \Countable, \IteratorAggregate
      */
     public static function fromGD($image, $backgroundColor = null)
     {
-        if (!is_resource($image) || get_resource_type($image) != 'gd') {
+        if (PHP_MAJOR_VERSION >= 8 && !$image instanceof \GdImage) {
+            throw new \InvalidArgumentException('Image must be a gd object');
+        } elseif (PHP_MAJOR_VERSION < 8 && (!is_resource($image) || get_resource_type($image) != 'gd')) {
             throw new \InvalidArgumentException('Image must be a gd resource');
         }
         if ($backgroundColor !== null && (!is_numeric($backgroundColor) || $backgroundColor < 0 || $backgroundColor > 16777215)) {
