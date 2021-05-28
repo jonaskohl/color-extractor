@@ -1,7 +1,10 @@
 ColorExtractor
 ==============
 
+<!--
+Commented out as travis-ci.org is shutting down and I first need to find a free alternative.
 [![Build Status](https://travis-ci.org/jonaskohl/color-extractor.png?branch=master)](https://travis-ci.org/jonaskohl/color-extractor)
+-->
 [![Total Downloads](https://poser.pugx.org/jonaskohl/color-extractor/downloads.png)](https://packagist.org/packages/jonaskohl/color-extractor)
 [![Latest Stable Version](https://poser.pugx.org/jonaskohl/color-extractor/v/stable.png)](https://packagist.org/packages/jonaskohl/color-extractor)
 
